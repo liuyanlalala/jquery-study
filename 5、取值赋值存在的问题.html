@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>取值赋值存在的问题</title>
+	<script	src="js/jquery-3.3.1.js"></script>
+	<script>	
+		$(function () {
+
+        /*
+        	当一组元素的时候，取值是一组元素中的一个
+        	当一组元素的时候，赋值是一组元素中的所有
+        */
+			// alert( $('li').html() );// aaa
+			$('li').html('hello');
+		});
+	</script>													
+</head>
+<body>
+	<ul>
+		<li>aaa</li>
+		<li>bbb</li>
+		<li>ccc</li>
+		<li>ddd</li>
+	</ul>
+</body>
+</html>

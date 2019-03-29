@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>has</title>
+	<script	src="js/jquery-3.3.1.js"></script>
+	<script>
+
+		// has: 包含
+
+		$(function () {
+
+			// 选中里面包含有class为box的div元素
+			$('div').has('.box').css('background', 'red');
+		});
+	</script>													
+</head>
+<body>
+	<div class="box">div1<span class="box">span</span></div>
+	<div class="box">div2</div>
+</body>
+</html>

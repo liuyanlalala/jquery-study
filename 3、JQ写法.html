@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>方法函数化</title>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script>
+		// 方法函数化
+		$(function () {
+			$('#div1').click(function () {
+				// html() == innerHTML
+				alert( $(this).html() );
+			});
+		})
+	</script>
+</head>
+<body>
+	<div id="div1">div</div>
+</body>
+</html>

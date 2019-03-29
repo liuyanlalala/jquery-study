@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>filterttr</title>
+	<script	src="js/jquery-3.3.1.js"></script>
+	<script>
+
+		// filter: 过滤 满足条件才会被选中
+		// not: filter的反义词
+
+		$(function () {
+
+			// div1被选中
+			// $('div').filter('.box').css('background', 'red');
+
+			// div2被选中
+			$('div').not('.box').css('background', 'red');
+		});
+	</script>													
+</head>
+<body>
+	<div class="box">div1</div>
+	<div>div2</div>
+</body>
+</html>

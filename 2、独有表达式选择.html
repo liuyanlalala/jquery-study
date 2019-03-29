@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>独有表达式选择</title>
+	<script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li title="hello"></li>
+		<li class="box"></li>
+		<li class="box"></li>
+		<li title="hello"></li>
+	</ul>
+	<script>
+		// 奇数行
+		// $('li:even').css('background', 'red');
+
+		// 偶数行
+		// $('li:odd').css('background', 'red');
+
+		// $('li.box').css('background', 'red');
+		// $('li').filter('.box').css('background', 'red');
+
+		$('li').filter('[title=hello]').css('background', 'red');
+
+	</script>
+</body>
+</html>

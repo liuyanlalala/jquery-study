@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>取值赋值</title>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script>
+		$(function () {
+
+		    // 赋值和取值的方法是一样的，只是根据有无参数来决定是赋值还是取值操作
+		    $('#div1').html('hello');// 赋值
+		    alert( $('#div1').html() );// 取值
+
+		    // css('width', '200px');// 赋值
+		    // css('width');// 取值
+
+		});
+	</script>
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+</html>

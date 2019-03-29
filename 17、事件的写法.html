@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script	src="js/jquery-3.3.1.js"></script>
+	<script>
+		$(function () {
+
+			// $('div').click(function () {
+			// 	alert(123);
+			// });
+
+			// 可以同时写多个事件，来针对一个操作
+			// $('div').on('click mouseover', function () {
+			// 	alert(123);
+			// });
+
+			// 不同事件针对不同的操作
+			// $('div').on({
+			// 	'click': function () {
+			// 		alert(123);
+			// 	},
+			// 	'mouseover': function () {
+			// 		alert(456);
+			// 	}
+			// });
+
+			$('div').on('click mouseover', function () {
+				alert(123);
+				// 关闭所有事件
+				// $('div').off();
+
+				// 加参数: 取消特定的事件
+				$('div').off('mouseover');
+			})
+		})
+	</script>													
+</head>
+
+<body>
+	<div>div</div>
+	<span>span</span>
+</body>
+</html>

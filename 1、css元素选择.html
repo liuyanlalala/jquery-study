@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素选择</title>
+	<script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div id="div1" class="box">div</div>
+	<span class="box">span</span>
+	<script>
+		// $('#div1').css('background', 'red');
+		// $('div').css('background', 'red');
+
+		// 注： 获取的是一个集合，对一个集合进行了操作
+		$('.box').css('background', 'red');
+	</script>
+</body>
+</html>

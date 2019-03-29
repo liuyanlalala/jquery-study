@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script	src="js/jquery-3.3.1.js"></script>
+	<script>
+		// appendTo: appendChild
+		$(function () {
+			// 把页面中的span标签插到div的前面,剪切效果
+			// 把...添加到...的前面
+			// $('span').insertBefore($('div'));
+			// $('div').insertAfter($('span'));
+			// 把div添加到span标签里面,添加到最后的位置
+			// $('div').appendTo($('span'));
+			// 把div添加到span标签里面,添加到最前的位置
+			// $('div').prependTo($('span'));
+			// div的前面是span
+			// ...的前面是...
+			// $('div').before($('span'));
+			// after() append() prepend()
+			// 区别：后续的操作变了
+			// 选中的都是表达式开始的那个元素
+			// $('div').before($('span')).css('background', 'red');
+			$('div').append($('span'));
+		})
+	</script>													
+</head>
+
+<body>
+	<div>div</div>
+	<span>span</span>
+</body>
+</html>

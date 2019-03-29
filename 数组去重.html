@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组去重</title>
+</head>
+<body>
+	<script>
+		var arr = [0,1,2,3,4,0,3,4,1,8,5,3]; 
+		var result = [];
+		var len = arr.length;
+		arr.forEach(function(e, i, arr){  //这里利用map，filter方法也可以实现
+			var bool = arr.indexOf(e,i+1);  //从传入参数的下一个索引值开始寻找是否存在重复
+			if(bool === -1){
+				result.push(e);
+			}
+		})
+		console.log(result);
+		// var result = [];
+		// for (var i=0; i<arr.length; i++) {
+		// 	for (var j= i+1; j<arr.length; j++) {
+		// 		if (arr[i] === arr[j]) {
+		// 			j = ++i;
+		// 		}
+		// 	}
+
+		// 	result.push(arr[i]);
+
+		// }
+		// console.log(result);
+
+		// var len = arr.length;
+
+		// for(var i = 0; i < len; i++){
+		// 	for(var j = i + 1; j < len; j++){
+		// 		if(arr[i] == arr[j]){
+		//     		arr.splice(j,1);
+		//     		len--;
+		//     		j--;
+		//    		}
+		//   	}
+		// }
+
+		// console.log(arr);
+	</script>
+</body>
+</html>
